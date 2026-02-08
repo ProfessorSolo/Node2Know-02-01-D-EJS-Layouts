@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Professor Solo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/josh">Josh</a>
+        <a href="/things">Things</a>
+      </nav>
+      <h1>// About_This_File</h1>
+    </header>
+    <main>
+      <article class="card">
+        <header>
+           <h2>Static HTML Served via Express</h2>
+           <h3>res.sendFile()</h3>
+        </header>
+        <section>
+          <p class="bio">
+            "I am a static file. I do not change. I do not render. I simply exist."
+          </p>
+          <p>
+            You are looking at <code>pages/about.html</code>. Unlike my dynamic siblings, I was not compiled or rendered. I was simply picked up by the server and tossed to your browser like a frisbee.
+          </p>
+          <h4>// Technical_Details</h4>
+          <ul>
+            <li>Served via: <code>res.sendFile()</code></li>
+            <li>Path Module: <code>path.join()</code> required</li>
+            <li>Content-Type: <code>text/html</code></li>
+            <li>Logic Level: 0%</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2026 Josh Solomon - Professor Solo | License: Node2Know Learner License 1.0 (Node2Know-LEARN-1.0)</p>
+    </footer>
+  </body>
+</html>

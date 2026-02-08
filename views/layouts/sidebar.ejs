@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Professor Solo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <%- include("../partials/header.ejs", { title: title || "Dashboard" } ) %>
+    
+    <div class="layout-sidebar">
+      <aside class="sidebar">
+        <h3>// System_Nav</h3>
+        <ul>
+          <li><a href="/dashboard">Overview</a></li>
+          <li><a href="/things">Inventory</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="/">Logout</a></li>
+        </ul>
+        
+        <br>
+        
+        <h3>// Server_Stats</h3>
+        <ul>
+          <li>Uptime: 99.9%</li>
+          <li>CPU: 12%</li>
+          <li>Memory: 450MB</li>
+          <li>Status: Online</li>
+        </ul>
+      </aside>
+
+      <main>
+        <%- body %>
+      </main>
+    </div>
+
+    <%# persistent footer %>
+    <%- include("../partials/footer.ejs" ) %>
+  </body>
+</html>

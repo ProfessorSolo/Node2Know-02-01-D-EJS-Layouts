@@ -1,0 +1,31 @@
+
+       <article class="card">
+         <header>
+           <h2>Inventory Log</h2>
+           <h3>[ All the Things ]</h3>
+         </header>
+         <section>
+            <p class="bio">
+              "This area is designated for Thing containment. Do not feed the objects."
+            </p>
+            <p>
+              The dynamic list of Things is rendered here. 
+            </p>
+            <p>
+              Currently, the data is hardcoded in the router. In a real application, the data would be retrieved from a database.
+            </p>
+            <h4>// Status_Report</h4>
+            <ul>
+             <% things.forEach(thing => { %>
+              <li>
+                <a href="/things/<%= thing.id %>" style="color: inherit; text-decoration: none; display: block; width: 100%;">
+                  <%= thing.name %> 
+                  <% if (!thing.active) { %> (Inactive) <% } %>
+                </a>
+              </li>
+             <% }) %>
+            </ul>
+            
+         </section>
+       </article>
+    

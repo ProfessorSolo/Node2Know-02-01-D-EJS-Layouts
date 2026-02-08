@@ -1,0 +1,27 @@
+{
+  "name": "jsnodejs-ejs-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProfessorSolo/JSNodeJS-EJS-Intro.git"
+  },
+  "keywords": [],
+  "author": "Joshua Solomon",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ProfessorSolo/JSNodeJS-EJS-Intro/issues"
+  },
+  "homepage": "https://github.com/ProfessorSolo/JSNodeJS-EJS-Intro#readme",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "morgan": "^1.10.1"
+  }
+}
